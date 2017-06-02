@@ -1296,3 +1296,3094 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (4.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered posts/show.html.erb within layouts/application (0.7ms)
 Completed 200 OK in 353ms (Views: 344.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-05-31 19:45:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (198.4ms)
+Completed 200 OK in 2743ms (Views: 2693.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/" for 10.0.2.2 at 2017-05-31 19:45:31 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (4.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 410ms (Views: 356.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-05-31 19:45:34 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 480ms (Views: 342.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-05-31 19:45:38 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (3.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 384ms (Views: 376.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 19:27:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 1553ms (Views: 1451.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-01 19:27:41 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 469ms (Views: 338.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 19:50:39 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 382ms (Views: 379.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/images/logo.svg" for 10.0.2.2 at 2017-06-01 19:50:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.svg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (80.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (307.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.4ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 19:50:40 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2017-06-01 19:50:40 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 19:50:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 19:50:40 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 19:50:40 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 19:50:41 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 19:50:41 +0000
+
+
+Started GET "/images/logo.svg" for 10.0.2.2 at 2017-06-01 19:50:41 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.svg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 19:53:54 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 1377ms (Views: 1370.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 19:53:55 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 19:53:55 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 19:53:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 19:53:55 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 19:53:55 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2017-06-01 19:53:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 19:53:56 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 19:53:56 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:04:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__1010762212__621620928 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__1010762212__621620928 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1387ms (Views: 1383.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-01 20:04:34 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 20:04:34 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/assets/application.self-d8c6e7932a9f6213e1d9cdad1661b53aa93e0c4d968bd6b42c38b77998b079b2.css?body=1" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 20:04:35 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:08:47 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__1010762212__621620928 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__1010762212__621620928 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 951ms (Views: 948.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/application.self-3bfb18f0eefcd28fd26ef950b423eb0e392d4ec499741b6f6fe8a3e34b32ff37.css?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 20:08:48 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 300ms (Views: 296.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+
+
+Started GET "/assets/application.self-3bfb18f0eefcd28fd26ef950b423eb0e392d4ec499741b6f6fe8a3e34b32ff37.css?body=1" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 20:10:59 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 20:11:00 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 20:11:00 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 20:11:00 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:12:38 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 290ms (Views: 286.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-01 20:12:38 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 20:12:38 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 20:12:38 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 20:12:38 +0000
+
+
+Started GET "/assets/application.self-3bfb18f0eefcd28fd26ef950b423eb0e392d4ec499741b6f6fe8a3e34b32ff37.css?body=1" for 10.0.2.2 at 2017-06-01 20:12:39 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 20:12:39 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 20:12:39 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 20:12:39 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 20:12:39 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:15:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 2196ms (Views: 2116.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:16:45 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 2.4ms)
+
+ActionView::Template::Error (Invalid CSS after "	}": expected selector or at-rule, was "}"):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:83
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___172504612_82966200'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:17:28 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___172504612_82966200 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___172504612_82966200 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 871ms (Views: 867.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/application.self-bb08ef55a9c960b695e8d1fd2147fd7e93c1eec7e215e47822da01440436a963.css?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 20:17:29 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-01 20:17:39 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___172504612_82966200 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___172504612_82966200 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 788ms (Views: 784.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/application.self-2afe2b8a01a73b18d139bcc342af4f95a80c57dea528c324eb6bf0e20e05753c.css?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:40 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-01 20:17:41 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-01 20:17:41 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:26:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (27.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__96083673_91495780 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__96083673_91495780 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 3462ms (Views: 3351.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:26:41 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 359ms (Views: 355.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/_normalize.self-eeefefad51f123ffe7ecde6fdfd539b13a47f4266e98acd6bd8e7ee7619dab3c.css?body=1" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/assets/application.self-91a5dcaad2d77eef86733065e7552169d32b4305dee271ddcc26d3dbde6e317e.css?body=1" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/assets/ruby-fdfbf93dc55b82a61fc87bc2856872e8ff84b9cb125d16a7b21768a0fc1a4d5a.svg" for 10.0.2.2 at 2017-06-02 10:26:42 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:27:03 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 3.3ms)
+
+SyntaxError (/vagrant/blog/app/views/layouts/application.html.erb:18: unknown regexp option - l
+/vagrant/blog/app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+			<li>'.freeze;@output_buffer.ap...
+			 ^
+/vagrant/blog/app/views/layouts/application.html.erb:20: unknown regexp option - l
+/vagrant/blog/app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+		</ul>
+		 ^
+/vagrant/blog/app/views/layouts/application.html.erb:24: unknown regexp option - l
+/vagrant/blog/app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+			<li>'.freeze;@output_buffer.ap...
+			 ^
+/vagrant/blog/app/views/layouts/application.html.erb:26: unknown regexp option - l
+/vagrant/blog/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+			<li>'.freeze;@output_buffer.ap...
+			 ^
+/vagrant/blog/app/views/layouts/application.html.erb:28: unknown regexp option - l
+/vagrant/blog/app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+		</ul>	
+		 ^
+/vagrant/blog/app/views/layouts/application.html.erb:30: unknown regexp options - dv
+/vagrant/blog/app/views/layouts/application.html.erb:35: syntax error, unexpected '<', expecting ')'
+</body>
+ ^
+/vagrant/blog/app/views/layouts/application.html.erb:36: unknown regexp options - htl
+/vagrant/blog/app/views/layouts/application.html.erb:37: unterminated string meets end of file
+/vagrant/blog/app/views/layouts/application.html.erb:37: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/layouts/application.html.erb:18: unknown regexp option - l
+  app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:20: unknown regexp option - l
+  app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:24: unknown regexp option - l
+  app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp option - l
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:28: unknown regexp option - l
+  app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:30: unknown regexp options - dv
+  app/views/layouts/application.html.erb:35: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:36: unknown regexp options - htl
+  app/views/layouts/application.html.erb:37: unterminated string meets end of file
+  app/views/layouts/application.html.erb:37: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (150.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (284.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:27:22 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 352ms (Views: 347.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:27:41 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 323ms (Views: 320.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:39:39 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__96083673__631296988 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__96083673__631296988 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1880ms (Views: 1876.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 10:39:41 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 10:39:41 +0000
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for 10.0.2.2 at 2017-06-02 10:39:41 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:49:06 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 285ms (Views: 280.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:49:20 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.8ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 415ms (Views: 411.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/ruby-1c320842f41a8984d59abb9b54fb0793d131d9160b20ee05a7e9ae7eda864505.svg" for 10.0.2.2 at 2017-06-02 10:49:20 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:09 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 376ms (Views: 371.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/ruby-49fd1bff371cf166121cf88cb2d604b4ab56639cd426eb2241f2772aac1c2105.svg" for 10.0.2.2 at 2017-06-02 10:50:09 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:26 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 382ms (Views: 377.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/ruby-74c515d1db51907301f306654bbae2749c8975c576616f6a29c0fdf1d420d74e.svg" for 10.0.2.2 at 2017-06-02 10:50:26 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:26 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 307ms (Views: 304.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:27 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 282ms (Views: 278.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:27 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 272ms (Views: 269.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:27 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 337ms (Views: 334.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:50:44 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 392ms (Views: 388.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/ruby-72b3b600f8efcd3e9a86fa573552b3703357e0002c771cf87bcf9a83677009f6.svg" for 10.0.2.2 at 2017-06-02 10:50:45 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:51:03 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 375ms (Views: 371.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/ruby-829fec6cb984208e37baf29edb108183596ec90889ae7c69267614e23a660a48.svg" for 10.0.2.2 at 2017-06-02 10:51:03 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:51:15 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 357ms (Views: 353.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/ruby-8aea663dc59ec4e341659ecff02c388b4cb830c470b55d2e4e86c22e94f73640.svg" for 10.0.2.2 at 2017-06-02 10:51:16 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:51:30 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 349ms (Views: 346.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/ruby-278a40edbf65a694c4b2bcd251b69896b0f01c3bb092a3ab22d28f7812f595b7.svg" for 10.0.2.2 at 2017-06-02 10:51:30 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:51:42 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 368ms (Views: 364.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/ruby-a6c76e342c5e3f5e435897668aa995c3eb5a8d531557985ae48e4da3ed04bd89.svg" for 10.0.2.2 at 2017-06-02 10:51:42 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 10:51:52 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 405ms (Views: 401.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/ruby-4e4a173ad212bc44e9d1923311b0176238402a09c312d1ca2ad8e32304428578.svg" for 10.0.2.2 at 2017-06-02 10:51:52 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:06:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 8816ms (Views: 8358.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:06:23 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:06:23 +0000
+
+
+Started GET "/assets/ruby-4e4a173ad212bc44e9d1923311b0176238402a09c312d1ca2ad8e32304428578.svg" for 10.0.2.2 at 2017-06-02 13:06:23 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:11:58 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (4.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 1768ms (Views: 1763.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:11:59 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:11:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/assets/rails-f16368bbf9bef30d8db6097ac0c87b9354ea8b4cae6d9797e154604f53d94d59.svg" for 10.0.2.2 at 2017-06-02 13:12:00 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:12:59 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 365ms (Views: 361.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:00 +0000
+
+
+Started GET "/assets/rails-cdc3699a2b1fc4dc3c877d8702ac2a089ababb1dc4a7f9594be5d29a26c95d67.svg" for 10.0.2.2 at 2017-06-02 13:13:01 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 355ms (Views: 350.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:43 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:44 +0000
+
+
+Started GET "/assets/rails-cb02f114ef8bffe69738d55e1632ca452a051bad77dabfeae76cfa532ef3c459.svg" for 10.0.2.2 at 2017-06-02 13:13:44 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 305ms (Views: 300.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:45 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:13:46 +0000
+
+
+Started GET "/assets/rails-cb02f114ef8bffe69738d55e1632ca452a051bad77dabfeae76cfa532ef3c459.svg" for 10.0.2.2 at 2017-06-02 13:13:46 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 277ms (Views: 274.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:06 +0000
+
+
+Started GET "/assets/ruby-4e4a173ad212bc44e9d1923311b0176238402a09c312d1ca2ad8e32304428578.svg" for 10.0.2.2 at 2017-06-02 13:14:06 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:14:56 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 927ms (Views: 922.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:14:57 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:57 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:57 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:57 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:14:58 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:14:58 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:58 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:14:58 +0000
+
+
+Started GET "/assets/snyk-4ae8a9d23243e6fadbfdec9e6e404d0f0b72a35d5c55be582d6ec8830144e4cb.svg" for 10.0.2.2 at 2017-06-02 13:14:58 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:15:18 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 425ms (Views: 420.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:15:18 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:15:18 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:15:18 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:15:19 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:15:19 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:15:19 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:15:19 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:15:19 +0000
+
+
+Started GET "/assets/snyk-daa3b621c15deb6cacb016cf9b1d83e651f88357adebb152314f86ce98f34d55.svg" for 10.0.2.2 at 2017-06-02 13:15:19 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:15:28 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 275ms (Views: 272.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 339ms (Views: 335.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:14 +0000
+
+
+Started GET "/assets/snyk-b40f75b729975077cecfccae059e7a7d55dc4912b4df9d4941b347b4d349c71a.svg" for 10.0.2.2 at 2017-06-02 13:16:15 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:16:53 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 344ms (Views: 340.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:16:54 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:17:23 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 348ms (Views: 344.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:17:23 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:17:23 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:17:23 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:17:24 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:17:24 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:17:24 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:17:24 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:17:24 +0000
+
+
+Started GET "/assets/snyk-a97a0ccc09551dc2eb2bce234e9ea022c9e2f198ce307a2d838a4ede4c572c10.svg" for 10.0.2.2 at 2017-06-02 13:17:24 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:27:35 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (26.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 1188ms (Views: 1160.7ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:27:36 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:27:37 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:27:37 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:28:09 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 293ms (Views: 289.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:28:09 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:28:10 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:29:15 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1299ms (Views: 1295.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:16 +0000
+
+
+Started GET "/assets/application.self-1a7f3fb0c463382590834148103458f4bfc33a28e8c4e593973b767f92ee04ad.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:16 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:16 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:16 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:16 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:17 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:17 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:29:17 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:29:26 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 754ms (Views: 750.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:26 +0000
+
+
+Started GET "/assets/application.self-368294fe063e5bea1e34a1c04860cfa84090641050e75b19c26e79cc19e02a0c.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:26 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:29:27 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 365ms (Views: 361.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:36 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:37 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:29:37 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:29:54 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 729ms (Views: 726.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-64858653602da5d07f1468868ec94e8efbee706b6a1e75c931bb73ad252fe840.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:29:55 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:30:04 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 849ms (Views: 846.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/application.self-27802ec07160d3279a359acd3fdb847b5cba4f3854de35ec143593f2876d3479.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:05 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:30:06 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:30:16 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 689ms (Views: 684.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-6c21f840c56bbe5e136878293c08abb31859c35a5fb2b95dcf969de94087b6dc.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:30:17 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:30:48 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 943ms (Views: 939.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/application.self-dc2443b9e1994c0d5837b81e90c18eddf6bf4a8c648188ce70eb050291259463.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:30:49 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.8ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 292ms (Views: 288.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:30:55 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:56 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:30:56 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:30:56 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:31:13 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004_89318800 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 717ms (Views: 713.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/application.self-e607a6f7bbded0931de9097eb775cdeed29e234674ac92102e8c871646b2af17.css?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:14 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:31:15 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:31:27 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 325ms (Views: 321.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:31:27 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:31:28 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:34:31 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 326ms (Views: 321.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:34:32 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:34:47 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.8ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 283ms (Views: 279.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:34:48 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:34:54 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 327ms (Views: 323.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:34:55 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:34:56 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 304ms (Views: 299.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:21 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:43:22 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:43:54 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 327ms (Views: 323.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:43:55 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:44:02 +0000
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2017-06-02 13:44:34 +0000
+Processing by Rails::InfoController#routes as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (57.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 124ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:46:09 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004__645186968 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004__645186968 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 757ms (Views: 753.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:46:10 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:10 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:46:10 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:11 +0000
+
+
+Started GET "/assets/application.self-01fc8b2bbc1aaa3fbde144535ab099fc037480662fe45510700ac9fde45e8af0.css?body=1" for 10.0.2.2 at 2017-06-02 13:46:11 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:11 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:11 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:46:11 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:46:26 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004__645186968 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004__645186968 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 788ms (Views: 784.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-5d7855533b50ccb7a2b7b7a144878455ff796be3135941d0e14cdf6b1c01668f.css?body=1" for 10.0.2.2 at 2017-06-02 13:46:27 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:27 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:46:28 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:47:53 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004__645186968 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__750105004__645186968 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 730ms (Views: 726.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:47:54 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:47:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:47:54 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:47:54 +0000
+
+
+Started GET "/assets/application.self-ca85577953244077f1c9a1f6526a44fed288389116dcf246bbc7e6a481f444f4.css?body=1" for 10.0.2.2 at 2017-06-02 13:47:55 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:47:55 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:47:55 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:47:55 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:47:55 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:57:17 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 334ms (Views: 330.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:57:18 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 298ms (Views: 294.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:20 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:57:21 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:57:21 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 13:58:42 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 289ms (Views: 285.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 13:58:42 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 13:58:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 13:58:42 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 13:58:42 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 13:58:43 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 13:58:43 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 13:58:43 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 13:58:43 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 13:58:43 +0000
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 14:00:04 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (3.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (77.6ms)
+Completed 200 OK in 530ms (Views: 389.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 14:00:18 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 285ms (Views: 281.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 14:01:11 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 291ms (Views: 285.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 14:01:14 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 353ms (Views: 352.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 14:02:42 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (2.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 292ms (Views: 286.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 14:02:43 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 14:02:46 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 303ms (Views: 302.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 278ms (Views: 271.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:34 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:35 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 14:03:35 +0000
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 14:03:48 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (3.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 324ms (Views: 317.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 14:03:49 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 14:03:50 +0000
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 14:05:04 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 309ms (Views: 302.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 14:05:05 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 14:05:06 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 14:05:09 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 295ms (Views: 294.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 14:05:43 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 289ms (Views: 284.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 14:05:49 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 299ms (Views: 294.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 14:05:51 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 288ms (Views: 284.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 14:05:52 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 291ms (Views: 289.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 14:05:53 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 312ms (Views: 309.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 15:55:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 2558ms (Views: 2458.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 15:55:31 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 15:55:33 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 313ms (Views: 309.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 15:55:36 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (163.2ms)
+Completed 200 OK in 482ms (Views: 480.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 15:55:51 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 303ms (Views: 298.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 15:56:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (100.5ms)
+Completed 200 OK in 1759ms (Views: 1708.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 15:56:51 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 363ms (Views: 324.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 17:16:04 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1303ms (Views: 1299.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:16:06 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:16:06 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:16:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:16:06 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:16:06 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:16:06 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:16:07 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:16:07 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:16:07 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:16:18 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 413ms (Views: 410.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:22:51 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 296ms (Views: 294.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:22:52 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:22:53 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:23:05 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 341ms (Views: 337.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:05 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:23:06 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:23:15 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 345ms (Views: 344.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:23:16 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:23:28 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 2974ms (Views: 2972.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-127923a5cbb90652ad63c63465b74b3cd0e663c4080f37ca32f10ad8396fcceb.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:23:32 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:23:46 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 862ms (Views: 861.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:47 +0000
+
+
+Started GET "/assets/application.self-4922f7a77d4d0469b3f0070b2968695b9dd3b51be8a3a4e9f95e7885c6e55bf7.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:47 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:47 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:47 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:47 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:23:47 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:23:48 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:23:48 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:24:03 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 863ms (Views: 862.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3bee54e20b7ed66533216957d7ddcb5a4e812eaf7cc25449c2929546a8399452.css?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:24:04 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 17:24:13 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 311ms (Views: 309.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:24:13 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:24:13 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:13 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:13 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:13 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:24:14 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:24:14 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:24:14 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 17:26:20 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 296ms (Views: 292.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:26:21 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 422ms (Views: 312.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:27:50 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 788ms (Views: 783.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/application.self-a8fd664a22c08b2263f0c3af92adf7ccc5217a3bcb57bba9394c0dcfe24c66e7.css?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:27:51 +0000
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:28:29 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 740ms (Views: 734.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:29 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/application.self-8b979a5b42ed0096f7255bb4dab1dc149bba8a7db740fbf9d6c52f2ba79cc6bf.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:28:30 +0000
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:28:36 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 319ms (Views: 312.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:28:37 +0000
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:28:45 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560__620839068 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 775ms (Views: 769.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/application.self-3a2a23a95360d8d209cf3ae1f4fc374108b3795788415c7bfaf6cf149c030709.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:46 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:47 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:28:47 +0000
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:28:53 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 331ms (Views: 325.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:28:54 +0000
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:30:15 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 333ms (Views: 327.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:30:15 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/application.self-3b4b6bcaf2b2733d0d01d6489de932a95e19463781821d61659b3f0bb22ccab3.css?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:30:16 +0000
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 17:31:08 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 760ms (Views: 754.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/application.self-e50c350c0c5bc433e9f4e4af741ede08b5b43d4251b2ba8e409ac2e0f11ab9c3.css?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:31:09 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:31:10 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 17:35:24 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 344ms (Views: 339.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 17:35:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 807ms (Views: 802.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:35:34 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:34 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:34 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:34 +0000
+
+
+Started GET "/assets/application.self-fbd83762580127d16d269af58fb7dc1438299c1d521c4d3d3db2df8b20214117.css?body=1" for 10.0.2.2 at 2017-06-02 17:35:35 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:35:35 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:35 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:35 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:35:35 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 17:35:46 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 767ms (Views: 764.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:35:46 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 17:35:46 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:35:47 +0000
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 17:36:53 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (2.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 291ms (Views: 286.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 17:37:05 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___264355560_92390000 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 856ms (Views: 850.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:37:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:06 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:06 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:06 +0000
+
+
+Started GET "/assets/application.self-58c6b0ab1f737d5c31ad5de5a9944bcff0b1fa947d11018fddfb97b332ae705e.css?body=1" for 10.0.2.2 at 2017-06-02 17:37:06 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:37:07 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:07 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:07 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:37:07 +0000
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 17:37:13 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (3.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 345ms (Views: 337.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 17:37:14 +0000
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 18:13:40 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.):
+  app/models/post.rb:2:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.1ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 18:14:37 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/vagrant/blog/app/models/post.rb:2: syntax error, unexpected tINTEGER, expecting =>
+	validates :title, presence: true, length: {:minimun 5}
+	                                                     ^):
+  app/models/post.rb:2: syntax error, unexpected tINTEGER, expecting =>
+  app/controllers/posts_controller.rb:21:in `show'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.8ms)
+
+
+Started GET "/posts/2" for 10.0.2.2 at 2017-06-02 18:16:43 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 342ms (Views: 294.0ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 18:16:43 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 18:16:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 18:16:43 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 18:16:43 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 18:16:43 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 18:16:44 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 18:16:44 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 18:16:44 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 18:16:44 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 18:16:46 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 336ms (Views: 334.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2017-06-02 18:16:52 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTXjqqwY8c1NWXdm20rAbfV5HHU0+E63ReHBBwmxX7jXSXF0PwYre9yJ63JFJkXjhp+Z1ZGIQ3BHE0Y5A1xIGw==", "post"=>{"title"=>"", "body"=>""}, "commit"=>"Save Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 313ms (Views: 302.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2017-06-02 18:17:18 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 328ms (Views: 292.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 18:17:19 +0000
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 18:17:21 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 300ms (Views: 299.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2017-06-02 18:17:24 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WHGvyW2Lmwe7i5urTnnbTtz+8KpbLYQoGMYgJ/RhuYj+DT0X/pVBsSpbB7/QFV7Arxh1Cv5die8aNKcZ/oyuKw==", "post"=>{"title"=>"", "body"=>""}, "commit"=>"Save Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 296ms (Views: 287.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2017-06-02 18:19:36 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N09f/Gmc3dHtaCEDNowLiQoS/YEeddoJw5h7r0M+WyWRM80i+oIHZ3y4vReo4I4HefR4IbsF187BavyRSdNMhg==", "post"=>{"title"=>"This is a validated post!", "body"=>"Microdosing poke organic pinterest DIY blog. Tattooed vaporware heirloom pitchfork. Keffiyeh kickstarter green juice raclette, dreamcatcher quinoa artisan marfa chillwave cray try-hard jianbing affogato. Pork belly fap stumptown meggings, bushwick cardigan biodiesel. Irony seitan pour-over, woke bespoke viral blog VHS narwhal godard offal small batch artisan actually lo-fi. Tofu tousled tilde kickstarter roof party chicharrones. Church-key waistcoat swag chartreuse, health goth kinfolk tumblr cardigan unicorn ennui poutine craft beer snackwave.\r\n\r\nEveryday carry listicle photo booth twee etsy sriracha. Polaroid hashtag organic mlkshk typewriter. XOXO cliche gentrify hot chicken lumbersexual artisan mustache, flexitarian locavore poke la croix polaroid lo-fi. Glossier sriracha food truck hoodie jean shorts brooklyn banh mi, farm-to-table selfies hot chicken yuccie bushwick. Kinfolk pug fam, wayfarers tumeric lyft cliche tattooed. Fanny pack mustache tilde godard locavore semiotics edison bulb, cold-pressed succulents hashtag drinking vinegar snackwave copper mug slow-carb. Crucifix succulents swag, pok pok occupy cronut fap bitters cold-pressed.\r\n\r\nPlaid aesthetic occupy, edison bulb pop-up man braid lyft helvetica locavore scenester chicharrones health goth twee. Plaid lyft ethical, pok pok kinfolk food truck messenger bag vexillologist portland sriracha pug cred. Flannel tumblr keytar ugh. Squid vegan PBR&B man bun wayfarers bespoke four loko. Fixie quinoa live-edge, jean shorts whatever taxidermy direct trade pour-over drinking vinegar everyday carry vinyl intelligentsia austin try-hard. Health goth godard tilde, readymade actually whatever coloring book cliche fam tofu cloud bread craft beer edison bulb. Affogato DIY 8-bit fap wolf pork belly."}, "commit"=>"Save Post"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (115.0ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "This is a validated post!"], ["body", "Microdosing poke organic pinterest DIY blog. Tattooed vaporware heirloom pitchfork. Keffiyeh kickstarter green juice raclette, dreamcatcher quinoa artisan marfa chillwave cray try-hard jianbing affogato. Pork belly fap stumptown meggings, bushwick cardigan biodiesel. Irony seitan pour-over, woke bespoke viral blog VHS narwhal godard offal small batch artisan actually lo-fi. Tofu tousled tilde kickstarter roof party chicharrones. Church-key waistcoat swag chartreuse, health goth kinfolk tumblr cardigan unicorn ennui poutine craft beer snackwave.\r\n\r\nEveryday carry listicle photo booth twee etsy sriracha. Polaroid hashtag organic mlkshk typewriter. XOXO cliche gentrify hot chicken lumbersexual artisan mustache, flexitarian locavore poke la croix polaroid lo-fi. Glossier sriracha food truck hoodie jean shorts brooklyn banh mi, farm-to-table selfies hot chicken yuccie bushwick. Kinfolk pug fam, wayfarers tumeric lyft cliche tattooed. Fanny pack mustache tilde godard locavore semiotics edison bulb, cold-pressed succulents hashtag drinking vinegar snackwave copper mug slow-carb. Crucifix succulents swag, pok pok occupy cronut fap bitters cold-pressed.\r\n\r\nPlaid aesthetic occupy, edison bulb pop-up man braid lyft helvetica locavore scenester chicharrones health goth twee. Plaid lyft ethical, pok pok kinfolk food truck messenger bag vexillologist portland sriracha pug cred. Flannel tumblr keytar ugh. Squid vegan PBR&B man bun wayfarers bespoke four loko. Fixie quinoa live-edge, jean shorts whatever taxidermy direct trade pour-over drinking vinegar everyday carry vinyl intelligentsia austin try-hard. Health goth godard tilde, readymade actually whatever coloring book cliche fam tofu cloud bread craft beer edison bulb. Affogato DIY 8-bit fap wolf pork belly."], ["created_at", "2017-06-02 18:19:36.761149"], ["updated_at", "2017-06-02 18:19:36.761149"]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 142ms (ActiveRecord: 125.7ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 18:19:36 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (7.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 304ms (Views: 294.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 18:19:45 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 294ms (Views: 290.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 18:19:49 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (2.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 291ms (Views: 286.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 18:19:52 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 312ms (Views: 307.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 18:19:54 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (3.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 308ms (Views: 301.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 18:19:54 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 297ms (Views: 292.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 18:19:56 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 315ms (Views: 311.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-02 18:19:59 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 300ms (Views: 298.9ms | ActiveRecord: 0.0ms)

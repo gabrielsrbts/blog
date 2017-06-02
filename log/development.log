@@ -5141,3 +5141,250 @@ Processing by PostsController#index as HTML
   [1m[35mPost Load (7.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
   Rendered posts/index.html.erb within layouts/application (10.8ms)
 Completed 200 OK in 305ms (Views: 297.5ms | ActiveRecord: 7.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20170602193638)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "body" text, "post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170602193638"]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (2.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_post_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_post_id' AND type='index'
+[0m
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 20:03:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (27.2ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___841498662_84385840 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___841498662_84385840 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 5002ms (Views: 4825.6ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:09 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:10 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:11 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 20:03:11 +0000
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 20:03:40 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 488ms (Views: 427.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-02 20:03:52 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (3.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (2.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mComment Load (3.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (228.1ms)
+  Rendered posts/show.html.erb within layouts/application (726.4ms)
+Completed 200 OK in 1202ms (Views: 1187.0ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:53 +0000
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 20:03:54 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-02 20:04:07 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 362ms (Views: 357.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 20:04:09 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (2.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (2.8ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 417ms (Views: 405.6ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/posts/1/comments" for 10.0.2.2 at 2017-06-02 20:04:40 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7VLX+aQtDxDRN9ThtN3p/C9ElxHXAajTynu5O/Ye0rNLLkUnNzPVpkDnSPUqsWxyXKISsXJxpRTIiT4F/PPFEA==", "comment"=>{"name"=>"Gabriel", "body"=>"First comment!"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (9.2ms)[0m  [1mINSERT INTO "comments" ("name", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gabriel"], ["body", "First comment!"], ["post_id", 1], ["created_at", "2017-06-02 20:04:40.802711"], ["updated_at", "2017-06-02 20:04:40.802711"]]
+  [1m[35m (10.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 42ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 20:04:40 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (6.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mComment Load (2.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (133.5ms)
+  Rendered posts/show.html.erb within layouts/application (181.2ms)
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 11.1ms)
+
+ActionView::Template::Error (undefined local variable or method `comment_created_at' for #<#<Class:0xa13fca4>:0xb541ff7c>
+Did you mean?  comment_iteration):
+    2: 	<div class="comment_content">
+    3: 		<p class="comment_name"><strong><%= comment.name %></strong></p>
+    4: 		<p class="comment_body"><%= comment.body %></p>
+    5: 		<p class="comment_time"><%= time_ago_in_words(comment_created_at) %> Ago</p>
+    6: 	</div>
+    7: </div>
+  app/views/comments/_comment.html.erb:5:in `_app_views_comments__comment_html_erb___813883999__626432818'
+  app/views/posts/show.html.erb:19:in `_app_views_posts_show_html_erb__945566321__620442658'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.6ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 20:05:25 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (3.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (2.9ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (2.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (1.4ms)
+  Rendered comments/_form.html.erb (3.4ms)
+  Rendered posts/show.html.erb within layouts/application (126.0ms)
+Completed 200 OK in 504ms (Views: 489.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-02 20:05:25 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-02 20:05:25 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-02 20:05:25 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-02 20:05:26 +0000
+
+
+Started POST "/posts/1/comments" for 10.0.2.2 at 2017-06-02 20:05:49 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e8ahbA+8tCLd0g7EoWT5UmW1vKkw/khSrzc9w8bTUTvdujOynKJulEwCktA/CHzcFlM5CZWORZWtxbr9zD5GmA==", "comment"=>{"name"=>"Pedro", "body"=>"Second comment!"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[36mPost Load (2.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (9.7ms)[0m  [1mINSERT INTO "comments" ("name", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pedro"], ["body", "Second comment!"], ["post_id", 1], ["created_at", "2017-06-02 20:05:49.453040"], ["updated_at", "2017-06-02 20:05:49.453040"]]
+  [1m[35m (12.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 42ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-02 20:05:49 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (7.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mComment Load (3.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered posts/show.html.erb within layouts/application (128.4ms)
+Completed 200 OK in 506ms (Views: 489.6ms | ActiveRecord: 13.3ms)

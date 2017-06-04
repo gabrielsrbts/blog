@@ -5856,3 +5856,48 @@ Started GET "/about" for 10.0.2.2 at 2017-06-04 11:24:34 +0000
 Processing by PagesController#about as HTML
   Rendered pages/about.html.erb within layouts/application (15.7ms)
 Completed 200 OK in 437ms (Views: 435.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-04 13:55:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 4575ms (Views: 4440.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/about" for 10.0.2.2 at 2017-06-04 13:55:37 +0000
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 475ms (Views: 474.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-04 13:55:37 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mComment Load (2.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (58.3ms)
+  Rendered comments/_form.html.erb (99.4ms)
+  Rendered posts/show.html.erb within layouts/application (483.5ms)
+Completed 200 OK in 1047ms (Views: 943.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-04 13:55:38 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (2.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mComment Load (2.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (3.4ms)
+  Rendered posts/show.html.erb within layouts/application (124.4ms)
+Completed 200 OK in 506ms (Views: 496.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-04 13:55:40 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 401ms (Views: 397.8ms | ActiveRecord: 2.6ms)

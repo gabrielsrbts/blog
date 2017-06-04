@@ -29,7 +29,9 @@
 			<li><%= link_to "Email", "#" %></li>
 		</ul>
 
-		<p class="sign_in">Admin Login</p>
+		<% if !user_signed_in? %>
+			<p class="sign_in">Admin Login</p>
+		<% end %>
 	</div>
 
 	<div id="main_content">
@@ -42,10 +44,12 @@
 				<p><%= link_to "Back to All Posts", root_path %></p>
 			<% end %>
 
-			<div class="buttons">
-				<%= link_to "New Post", new_post_path, class:"button" %>
-				<button class="button">Log Out</button>
-			</div>
+			<% if user_signed_in? %>
+				<div class="buttons">
+					<%= link_to "New Post", new_post_path, class:"button" %>
+					<button class="button">Log Out</button>
+				</div>
+			<% end %>
 
 		</div>
 

@@ -6015,3 +6015,1498 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (11.7ms)
   Rendered devise/sessions/new.html.erb within layouts/application (291.9ms)
 Completed 200 OK in 2343ms (Views: 2220.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-04 22:37:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 2056ms (Views: 1918.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-04 22:38:01 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-04 22:38:02 +0000
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-04 22:38:04 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (362.7ms)
+Completed 200 OK in 922ms (Views: 886.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-04 22:38:11 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 506ms (Views: 501.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/about" for 10.0.2.2 at 2017-06-04 22:38:23 +0000
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 421ms (Views: 417.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/perfil-e8b0952168477035258a4bb08320665f5b485fe80d88286f620d327a7af1f531.jpg" for 10.0.2.2 at 2017-06-04 22:38:24 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-04 22:38:26 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 386ms (Views: 381.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-04 22:38:33 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 442ms (Views: 439.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-06-04 22:38:38 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 429ms (Views: 428.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2017-06-04 22:38:48 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M0vEPvkEHBE2ASZ1WbPt9kXPQDPgr5bfndX2A/wK5XKdw6Koqoo4MBk/jj28aim3A57C5mY9hhgkpX8CA+iTAw==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (2.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'gabrielsrbts@gmail.com' LIMIT 1
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "gabrielsrbts@gmail.com"], ["encrypted_password", "$2a$11$Prtmg97f.NIPt1yt4ieCLONsT9w/MQY4iGzUFJiJ.Q3YKegxIRwRe"], ["created_at", "2017-06-04 22:38:49.159965"], ["updated_at", "2017-06-04 22:38:49.159965"]]
+  [1m[35m (63.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-06-04 22:38:49.233706"], ["current_sign_in_at", "2017-06-04 22:38:49.233706"], ["last_sign_in_ip", "10.0.2.2"], ["current_sign_in_ip", "10.0.2.2"], ["sign_in_count", 1], ["updated_at", "2017-06-04 22:38:49.235648"], ["id", 1]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 779ms (ActiveRecord: 101.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-04 22:38:49 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (7.0ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 344ms (Views: 334.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-04 22:38:54 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (16.2ms)
+  Rendered posts/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 401ms (Views: 395.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:14:05 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (28.6ms)
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2980ms (Views: 2858.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/application.self-2b5172f03f2a5f57f6b73d90fa131d6e0916e505d4ad77b6382cc1865ea6c95a.css?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/_normalize.self-d4d7d644cbf594bee666a6fd0913bbe24fd61f12b7b987c31126d811bb861eff.css?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-10 17:14:08 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-06-10 17:14:09 +0000
+
+
+Started GET "/assets/snyk-c0212f2ba7594a3d71efc03a7cb06e19ccfcf43aa2dcb2867a295d17a5e7b1ad.svg" for 10.0.2.2 at 2017-06-10 17:14:09 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:14:38 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 356ms (Views: 349.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:14:41 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (3.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 395ms (Views: 388.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-10 17:14:43 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (150.7ms)
+  Rendered posts/new.html.erb within layouts/application (209.6ms)
+Completed 200 OK in 653ms (Views: 596.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-10 17:15:17 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (2.8ms)
+  Rendered posts/new.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 445ms (Views: 438.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/about" for 10.0.2.2 at 2017-06-10 17:15:21 +0000
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (15.9ms)
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 372ms (Views: 369.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/perfil-e8b0952168477035258a4bb08320665f5b485fe80d88286f620d327a7af1f531.jpg" for 10.0.2.2 at 2017-06-10 17:15:21 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:15:25 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.8ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 386ms (Views: 378.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-10 17:15:26 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (2.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (12.1ms)
+  Rendered comments/_form.html.erb (3.7ms)
+  Rendered posts/show.html.erb within layouts/application (313.6ms)
+Completed 200 OK in 721ms (Views: 697.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2017-06-10 17:18:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (58.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (127.0ms)
+Completed 200 OK in 227ms (Views: 190.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:19:46 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (16.3ms)
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1648ms (Views: 1586.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/users/sign_out" for 10.0.2.2 at 2017-06-10 17:19:55 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:21:57 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 398ms (Views: 391.4ms | ActiveRecord: 5.3ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2017-06-10 17:22:01 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"N1brDAp4WB5NbVs6qUlo4wvHN1H5ghVNtFI7Z5fggjCZ3o2aWfZ8P2JT83JMkKyiTZa1hH8QBYoNIrJmaAL0QQ=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:22:01 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 383ms (Views: 379.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:26:37 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (28.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (260.9ms)
+Completed 200 OK in 725ms (Views: 695.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:26:42 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HsttK0TJYwWO8osQdJmW1pJAYmNWwp8nRiO+YAfqLXe/km7m9JDAPNVI3mFcuCbf0VsaAkHeprjBxgA825dnxA==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "member@member.com"]]
+Completed 401 Unauthorized in 78ms (ActiveRecord: 2.8ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HsttK0TJYwWO8osQdJmW1pJAYmNWwp8nRiO+YAfqLXe/km7m9JDAPNVI3mFcuCbf0VsaAkHeprjBxgA825dnxA==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 856ms (Views: 436.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:26:55 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UrTrehBj6N3sO0dHeL2RrKUQDvL9i8wYEgQtAZsvXyDz7ei3oDpL5LeBEjZQnCGl5gt2k+qX9YeV4ZNdR1IVkw==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member@member.com"]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 2.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UrTrehBj6N3sO0dHeL2RrKUQDvL9i8wYEgQtAZsvXyDz7ei3oDpL5LeBEjZQnCGl5gt2k+qX9YeV4ZNdR1IVkw==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 628ms (Views: 435.7ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (17.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:28:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (258.3ms)
+Completed 200 OK in 2375ms (Views: 2246.9ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:28:33 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NpMx9Svv94YrfJPYlk7aGtM3CTS/9rJp9iUpOGnm6G6XyjI4m7ZUv3DGxqm+b2oTkCxxVajqi/ZxwJdktZui3Q==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "gabrielsrbts@gmail.com"]]
+Completed 401 Unauthorized in 380ms (ActiveRecord: 3.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NpMx9Svv94YrfJPYlk7aGtM3CTS/9rJp9iUpOGnm6G6XyjI4m7ZUv3DGxqm+b2oTkCxxVajqi/ZxwJdktZui3Q==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 797ms (Views: 559.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:28:40 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PffLWIJwQcppbWQZ3TjfhP2tDkOU9TlxzxNRcA3OJGmcrsiVMini8zLXMWj1GW+NvrZ2IoPpAO5I9u8s0bNu2g==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "gabrielsrbts@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-06-10 17:28:40.416421"], ["sign_in_count", 2], ["updated_at", "2017-06-10 17:28:40.419646"], ["id", 1]]
+  [1m[35m (11.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 442ms (ActiveRecord: 19.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:28:40 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (7.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (25.9ms)
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 523ms (Views: 418.0ms | ActiveRecord: 9.6ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2017-06-10 17:28:50 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NHJ3bU24K6heRwD/BCPfznnPh+/knBBhyA4zGTbFxzPhGmlT7O4a9sMADaHsZlFoDKtSZU5KINHQhe8G1vlNeQ=="}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:28:50 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 416ms (Views: 413.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-10 17:28:59 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mComment Load (2.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (2.4ms)
+  Rendered comments/_form.html.erb (13.8ms)
+  Rendered posts/show.html.erb within layouts/application (346.4ms)
+Completed 200 OK in 763ms (Views: 740.8ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:29:12 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 455ms (Views: 450.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:30:52 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 3450ms (Views: 3446.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.self-c4049e6ebc80825bda90e29179d69b506ac6510996093383b4e8af9ed04d24d9.css?body=1" for 10.0.2.2 at 2017-06-10 17:30:56 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:31:01 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 406ms (Views: 402.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:31:03 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 454ms (Views: 450.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:31:05 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 459ms (Views: 455.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-10 17:31:07 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mComment Load (2.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/_form.html.erb (2.6ms)
+  Rendered posts/show.html.erb within layouts/application (129.0ms)
+Completed 200 OK in 534ms (Views: 523.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:31:09 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 488ms (Views: 483.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:31:11 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (97.3ms)
+Completed 200 OK in 538ms (Views: 536.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:31:25 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vjJQE63ArUHgmCql9nZxuiZGmP6XZRinI6qZ7fENVqY5c01rjhnI8q3zBC/moDJ7Ht21CRMI189l++ZpTBntSg==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "gabrielsrbts@gmail.com"]]
+Completed 401 Unauthorized in 244ms (ActiveRecord: 2.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vjJQE63ArUHgmCql9nZxuiZGmP6XZRinI6qZ7fENVqY5c01rjhnI8q3zBC/moDJ7Ht21CRMI189l++ZpTBntSg==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 750ms (Views: 514.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:32:19 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gTMQ55sUl6oBSPxr62+FIHiedjKj6bBSqDlQlRbsyPMGcg2fuM3yGUwj0uH7ucbhQAVbxSeEfzruaC8Rq/hzHw==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "gabrielsrbts@gmail.com"]]
+Completed 401 Unauthorized in 278ms (ActiveRecord: 2.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gTMQ55sUl6oBSPxr62+FIHiedjKj6bBSqDlQlRbsyPMGcg2fuM3yGUwj0uH7ucbhQAVbxSeEfzruaC8Rq/hzHw==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1368ms (Views: 1123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0630099ec010412942d387a1ac838bc19253d5ab80456a7f5598743e1342e082.css?body=1" for 10.0.2.2 at 2017-06-10 17:32:21 +0000
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:32:22 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxQOSI4rxtAPR0IOZDkmyS04fFa7qqmJmHNzNhIQBrcUVRMwrfKjY0IsbIR072UIFaNRoT/HZuHeIgyyrwS9Ww==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "gabrielsrbts@gmail.com"]]
+Completed 401 Unauthorized in 256ms (ActiveRecord: 2.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxQOSI4rxtAPR0IOZDkmyS04fFa7qqmJmHNzNhIQBrcUVRMwrfKjY0IsbIR072UIFaNRoT/HZuHeIgyyrwS9Ww==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 781ms (Views: 538.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:32:35 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y57fvmi9t0SZqgSoN+njkSgqGizeK+tW2B7yHQ+wYjjk38LGS2TS99TBKiInP6BQELE321pGJD6eT42ZsqTZ1A==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "gabrielsrbts@gmail.com"]]
+Completed 401 Unauthorized in 239ms (ActiveRecord: 2.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y57fvmi9t0SZqgSoN+njkSgqGizeK+tW2B7yHQ+wYjjk38LGS2TS99TBKiInP6BQELE321pGJD6eT42ZsqTZ1A==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (53.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1405ms (Views: 1169.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1115865665208eb99ffc7636c438dc73d695cbdbf68211030c354b857f16b136.css?body=1" for 10.0.2.2 at 2017-06-10 17:32:36 +0000
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (101.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1086ms (Views: 1083.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-be1cb05c35e933147252478af9ae50107da69f69b00dbdb65cbd7611311719f7.css?body=1" for 10.0.2.2 at 2017-06-10 17:33:09 +0000
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:10 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"10D9EGq9Dn1r0pKyQJHnL9ggovV0s9i2pWGGU5tObIRQAeBoSWRrzia5vDhQR6Tu4LuPAvDeF97jMPnXJlrXaA==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member@member.com"]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 2.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"10D9EGq9Dn1r0pKyQJHnL9ggovV0s9i2pWGGU5tObIRQAeBoSWRrzia5vDhQR6Tu4LuPAvDeF97jMPnXJlrXaA==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 768ms (Views: 520.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:20 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1183ms (Views: 1181.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-260d6088e08e7595599ea7bed0db92f96497ce84a2a91e5bda6005e707f51892.css?body=1" for 10.0.2.2 at 2017-06-10 17:33:21 +0000
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:22 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"otzMaD2jomDfmaZ5shOowWF3+O3nkRcnYXP4MnhYlc4lndEQHnrH05LyiPOixesAWezVGmP82E8nIoe2xUwuIg==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "member@member.com"]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 2.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"otzMaD2jomDfmaZ5shOowWF3+O3nkRcnYXP4MnhYlc4lndEQHnrH05LyiPOixesAWezVGmP82E8nIoe2xUwuIg==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 796ms (Views: 561.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:42 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (57.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1205ms (Views: 1202.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-16eb9653a86f6767780e2618b73272c92b1c1747a5a77bae1aa4cd2e76bff68b.css?body=1" for 10.0.2.2 at 2017-06-10 17:33:43 +0000
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:44 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tY9gvmY7yMGojgeY1zrDpRVaE0YsDm39fZT7RARzG1plyD62kGKkEvJFpRziqjPrM5Fupzd9t+zpyxprQV3gQ==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member@member.com"]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 2.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tY9gvmY7yMGojgeY1zrDpRVaE0YsDm39fZT7RARzG1plyD62kGKkEvJFpRziqjPrM5Fupzd9t+zpyxprQV3gQ==", "user"=>{"email"=>"member@member.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 768ms (Views: 509.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:33:56 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NyWG4OSKKRC/xVysV/H8yql5ZHZmjzh8NGK56T8qY2ewZJuYx1NMo/KuciZHJ78LkeJJgeLi9xRyM8Ztgj7Yiw==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "gabrielsrbts@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-06-10 17:28:40.416421"], ["current_sign_in_at", "2017-06-10 17:33:56.452607"], ["sign_in_count", 3], ["updated_at", "2017-06-10 17:33:56.455375"], ["id", 1]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 363ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:33:56 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (7.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 400ms (Views: 388.9ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:36:55 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 998ms (Views: 990.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.self-eae9d5b22d63db6179abcc62ea11822c6fdffeefaefcbaa45732b7f489690559.css?body=1" for 10.0.2.2 at 2017-06-10 17:36:56 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:39:53 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1004ms (Views: 997.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.self-f6df1c10f249b1ee4f5954f78ed62c25e9065f4b0d7e59808bc1aeefe06a4d77.css?body=1" for 10.0.2.2 at 2017-06-10 17:39:54 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:40:21 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1094ms (Views: 1086.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-2d845aa2a0042a81e7d1b7087d2c6809b99f8f874b003363fba26d9b5236a64b.css?body=1" for 10.0.2.2 at 2017-06-10 17:40:22 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:40:35 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 487ms (Views: 481.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:41:00 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1055ms (Views: 1048.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.self-5f54edcc915c8dd1622e402ee476031803cbcfcf5d732e7e343a44dbc7b978fb.css?body=1" for 10.0.2.2 at 2017-06-10 17:41:01 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:41:02 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (57.3ms)
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 488ms (Views: 479.3ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:41:12 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1018ms (Views: 1010.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.self-dece52a97335ca4f8ac1eef75bf77ee716c5b4fdc485625231604d5ace52c2c1.css?body=1" for 10.0.2.2 at 2017-06-10 17:41:13 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:41:47 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 995ms (Views: 988.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.self-0a71d2febb81683ece1b1470dcb61e995ecc79a0624e3eccd83fcaf03d2ceb10.css?body=1" for 10.0.2.2 at 2017-06-10 17:41:48 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:42:01 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1012ms (Views: 1004.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.self-eed0a19a251cabad846ad827df3b22dd15804862a773d24b6902cf218bc02503.css?body=1" for 10.0.2.2 at 2017-06-10 17:42:02 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:42:45 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1054ms (Views: 1047.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.self-f68e776c1de01722ace89f6bf9a9f776d853a258756f638f437f088c6f9a83fe.css?body=1" for 10.0.2.2 at 2017-06-10 17:42:46 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:42:58 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1049ms (Views: 1042.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.self-2069b2ed1124f15caa0e11428ddaac5f7e71044c091dc60bada832c71a7b1fce.css?body=1" for 10.0.2.2 at 2017-06-10 17:43:00 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:43:07 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1037ms (Views: 1029.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.self-be201ce855f5b25b1139270b6fdcb38c3f47c1c7c97e776531e96d668465ade5.css?body=1" for 10.0.2.2 at 2017-06-10 17:43:08 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:43:14 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1051ms (Views: 1045.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.self-0ea083c8e82d06d5068f7b83e6d5cd681404c8a9cf61a2ac77c04cd214955614.css?body=1" for 10.0.2.2 at 2017-06-10 17:43:16 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:43:22 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__628879748 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1114ms (Views: 1107.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-3a8eaae48dbc0ec237dd30af59b901acc5c07a5db98eba4e857ac9a7b1ef7fd4.css?body=1" for 10.0.2.2 at 2017-06-10 17:43:23 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:43:30 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (3.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 501ms (Views: 494.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:43:46 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 449ms (Views: 442.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-10 17:43:51 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (43.9ms)
+  Rendered posts/new.html.erb within layouts/application (78.7ms)
+Completed 200 OK in 475ms (Views: 467.5ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2017-06-10 17:43:54 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cewUecLDg2ipYK66m/Q7QZXdrVZ3y3o8flj9GlZVySnAqDhEIXgX3FTNllRgCwT76BcsFlOby4kK3vEU1NgpaQ=="}
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:43:54 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 436ms (Views: 432.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2017-06-10 17:44:42 +0000
+Processing by Rails::InfoController#routes as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:45:07 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 445ms (Views: 441.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:46:01 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 493ms (Views: 488.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:46:06 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (91.6ms)
+Completed 200 OK in 573ms (Views: 570.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:46:18 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y3jTQ4qfy7TKAfEs2xAEOVEGZoFKJJAKgXiztYrzqQCuz2tihxHKxt+j1h06WhqjpU9CzKRCV/6Gj7J3phzd+w==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "gabrielsrbts@gmail.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (7.8ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-06-10 17:33:56.452607"], ["current_sign_in_at", "2017-06-10 17:46:18.897756"], ["sign_in_count", 4], ["updated_at", "2017-06-10 17:46:18.900283"], ["id", 1]]
+  [1m[35m (38.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 388ms (ActiveRecord: 48.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:46:19 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (7.8ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (12.9ms)
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 457ms (Views: 445.2ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-10 17:46:26 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (3.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (2.5ms)
+  Rendered posts/show.html.erb within layouts/application (93.9ms)
+Completed 200 OK in 583ms (Views: 568.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-10 17:50:04 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (2.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (1.2ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (139.7ms)
+Completed 200 OK in 567ms (Views: 554.1ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:50:06 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (17.4ms)
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 491ms (Views: 483.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/gabrielsrbts@gmail.com" for 10.0.2.2 at 2017-06-10 17:50:16 +0000
+
+ActionController::RoutingError (No route matches [GET] "/gabrielsrbts@gmail.com"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:51:48 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 454ms (Views: 447.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/about" for 10.0.2.2 at 2017-06-10 17:52:40 +0000
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (58.7ms)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 461ms (Views: 457.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:52:45 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 466ms (Views: 458.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:52:46 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 455ms (Views: 447.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-10 17:52:49 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (2.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mComment Load (2.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.8ms)
+  Rendered comments/_form.html.erb (2.6ms)
+  Rendered posts/show.html.erb within layouts/application (131.5ms)
+Completed 200 OK in 520ms (Views: 507.7ms | ActiveRecord: 9.0ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2017-06-10 17:52:56 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hxIlmy1rUCyynu+UsK8YKgpeT4zLg0nCy6KGOLJP3yB0HpRF8bmzMeK1zGLFsIX5omAU57YqtIbZl5hYJ+k+uQ=="}
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:52:56 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 430ms (Views: 427.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-10 17:52:58 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (2.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mComment Load (2.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered posts/show.html.erb within layouts/application (87.9ms)
+Completed 200 OK in 516ms (Views: 506.4ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/posts/3/comments" for 10.0.2.2 at 2017-06-10 17:53:09 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wIAm9atJ7QTiU0TjTikZDKuf8BZv5m05/QHbj2iA1VT9Iv4tB4tBghQ1QUGVRjxqQBgfbUxukhDGLAtCieBH9A==", "comment"=>{"name"=>"Jade", "body"=>"Comment Test."}, "commit"=>"Create Comment", "post_id"=>"3"}
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.2ms)[0m  [1mINSERT INTO "comments" ("name", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jade"], ["body", "Comment Test."], ["post_id", 3], ["created_at", "2017-06-10 17:53:09.540614"], ["updated_at", "2017-06-10 17:53:09.540614"]]
+  [1m[35m (11.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 34ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/posts/3" for 10.0.2.2 at 2017-06-10 17:53:09 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (80.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (2.9ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mComment Load (2.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered posts/show.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 594ms (Views: 505.3ms | ActiveRecord: 85.5ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:53:16 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (92.8ms)
+Completed 200 OK in 518ms (Views: 516.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-06-10 17:53:26 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9im+UvQWwjHR0zsTQCnhMePbkxEw3g/ZFUre+AezG+nLi2aKWNRutye1PrGbRsRXCFx8ahNW8PAuZw415tOJSQ==", "user"=>{"email"=>"gabrielsrbts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "gabrielsrbts@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-06-10 17:46:18.897756"], ["current_sign_in_at", "2017-06-10 17:53:27.275864"], ["sign_in_count", 5], ["updated_at", "2017-06-10 17:53:27.279389"], ["id", 1]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 370ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:53:27 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (7.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (11.1ms)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 443ms (Views: 433.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-10 17:53:31 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mComment Load (2.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered comments/_form.html.erb (3.1ms)
+  Rendered posts/show.html.erb within layouts/application (93.6ms)
+Completed 200 OK in 544ms (Views: 532.0ms | ActiveRecord: 9.0ms)
+
+
+Started DELETE "/posts/1/comments/2" for 10.0.2.2 at 2017-06-10 17:53:37 +0000
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pcOOC2LmakvkIOgD2cTu7z01p9iOr8frZCydO1p4LkAhMfK3ibo1I5GiNq9649D/oZ6EPblpFFzNKB/SI34gaw==", "post_id"=>"1", "id"=>"2"}
+  [1m[35mPost Load (2.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (3.4ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."post_id" = ? AND "comments"."id" = ? LIMIT 1[0m  [["post_id", 1], ["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (47.6ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 2]]
+  [1m[35m (12.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 91ms (ActiveRecord: 66.3ms)
+
+
+Started GET "/posts/1" for 10.0.2.2 at 2017-06-10 17:53:37 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (8.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (2.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/_form.html.erb (2.2ms)
+  Rendered posts/show.html.erb within layouts/application (97.3ms)
+Completed 200 OK in 540ms (Views: 521.6ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:55:09 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (7.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (15.3ms)
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 532ms (Views: 519.8ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:56:13 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+  [1m[35mUser Load (3.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 536ms (Views: 528.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:56:16 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 462ms (Views: 454.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:56:17 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 453ms (Views: 446.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:56:22 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 503ms (Views: 495.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:57:33 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (3.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1005ms (Views: 997.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.self-84fb4ce9c460e96bc94237ca7a4f152175c33d780f6a72ccca4c2b69f9ba9900.css?body=1" for 10.0.2.2 at 2017-06-10 17:57:34 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 17:57:41 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1044ms (Views: 1036.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.self-2eea9008be116cfe2776c4f0c5008350faa932ad0e137d0b44f99c425c626b86.css?body=1" for 10.0.2.2 at 2017-06-10 17:57:43 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:01 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1027ms (Views: 1020.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-297486d1861a4e1d7f8d1a7443909b12b21791a3cfdcdcde0fd22fae9121c0d9.css?body=1" for 10.0.2.2 at 2017-06-10 18:01:02 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 454ms (Views: 446.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:17 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1100ms (Views: 1093.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/application.self-d55beafbcfe87ab581c5660825c8d89d3c2183f2e70753a0c333ade340272efb.css?body=1" for 10.0.2.2 at 2017-06-10 18:01:18 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:23 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1103ms (Views: 1096.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.self-ab612564954aad9af9eba7aedc784f4f61f4cf40531a932eef6ec03331321d29.css?body=1" for 10.0.2.2 at 2017-06-10 18:01:24 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:33 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (3.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1051ms (Views: 1044.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application.self-7c540ac8ec6f32d4c8b5b2374516cdb7f15e839a1a22ca17b9f7b9a221b99524.css?body=1" for 10.0.2.2 at 2017-06-10 18:01:34 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:49 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1020ms (Views: 1013.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-fff8eab9efb7259a30565c2f1abac0f7348507d390eaf14ace9a80ad5b0ac646.css?body=1" for 10.0.2.2 at 2017-06-10 18:01:50 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:01:59 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1059ms (Views: 1050.8ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/application.self-ae1b10f108eb5aa8a192c9396bbc643b1eb7bd434eb7442ce0e6972cb19798d8.css?body=1" for 10.0.2.2 at 2017-06-10 18:02:00 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:02:14 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1141ms (Views: 1134.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.self-fea898d9d2c3b4181d6966a6eca73f469f03e6027e890e836dbc51c73da00753.css?body=1" for 10.0.2.2 at 2017-06-10 18:02:15 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:02:22 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 480ms (Views: 473.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-10 18:02:34 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (2.6ms)
+  Rendered posts/new.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 474ms (Views: 466.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2017-06-10 18:03:49 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B5pbzAdAmM4Ts4JLdJ/POd0nXEPW6ikgkZwuUwjYsXWDaCdw7BzHpmYxXOfXuPEpQYx/puEs+pc4mKy6cd6/Xg==", "post"=>{"title"=>"New Post Test", "body"=>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.\r\n\r\nNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee"}, "commit"=>"Create Post"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.6ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "New Post Test"], ["body", "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.\r\n\r\nNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee"], ["created_at", "2017-06-10 18:03:49.145877"], ["updated_at", "2017-06-10 18:03:49.145877"]]
+  [1m[36m (23.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 53ms (ActiveRecord: 33.6ms)
+
+
+Started GET "/posts/5" for 10.0.2.2 at 2017-06-10 18:03:49 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (12.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 5]]
+  [1m[36mComment Load (2.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (2.5ms)
+  Rendered posts/show.html.erb within layouts/application (58.5ms)
+Completed 200 OK in 520ms (Views: 497.2ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:04:22 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 455ms (Views: 447.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/posts/5" for 10.0.2.2 at 2017-06-10 18:04:25 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (2.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 5]]
+  [1m[36mComment Load (2.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (3.2ms)
+  Rendered posts/show.html.erb within layouts/application (105.8ms)
+Completed 200 OK in 516ms (Views: 503.5ms | ActiveRecord: 9.1ms)
+
+
+Started DELETE "/posts/5" for 10.0.2.2 at 2017-06-10 18:04:40 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qfg9wNLHkGf3Olag5yXGH6Nvt6lywzce+iXCWjPizXwtCkF8OZvPD4K4iAxEAvgPP8SUTEUF5KlTIUCzSuTDVw==", "id"=>"5"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mComment Load (2.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  [1m[35mSQL (5.8ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 5]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 27.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-06-10 18:04:40 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (7.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (13.1ms)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 507ms (Views: 495.5ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/posts/new" for 10.0.2.2 at 2017-06-10 18:04:58 +0000
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/new.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 480ms (Views: 472.9ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2017-06-10 18:05:14 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tDJa9MbhSV9fV/XsDw9qLEtVkNNz9yhcRpCd8+4GjhaIrXXOEfaTQj/gXsTGwO4LYZ1pnoJDxbYHsCetr4UEw==", "post"=>{"title"=>"New Post Blog Test", "body"=>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.\r\n\r\nInteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (10.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New Post Blog Test"], ["body", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.\r\n\r\nInteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"], ["created_at", "2017-06-10 18:05:14.941597"], ["updated_at", "2017-06-10 18:05:14.941597"]]
+  [1m[35m (11.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 37ms (ActiveRecord: 24.0ms)
+
+
+Started GET "/posts/6" for 10.0.2.2 at 2017-06-10 18:05:14 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (8.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[35mComment Load (2.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 6]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.2ms)
+  Rendered posts/show.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 508ms (Views: 489.8ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/posts/6/edit" for 10.0.2.2 at 2017-06-10 18:05:20 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (2.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered posts/_form.html.erb (2.7ms)
+  Rendered posts/edit.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 491ms (Views: 482.1ms | ActiveRecord: 4.3ms)
+
+
+Started PATCH "/posts/6" for 10.0.2.2 at 2017-06-10 18:05:30 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yNAwL27aFGXG+j81lIiABAvsSW4oLmpcAxtzQjviQGBMIkyThYZLDbN44Zk3r74Ul0dqix/oueuqH/GrQuROSw==", "post"=>{"title"=>"New Post Blog Test", "body"=>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.\r\n\r\n\r\n\r\na\r\n\r\nInteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"}, "commit"=>"Update Post", "id"=>"6"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (2.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.2ms)[0m  UPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["body", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.\r\n\r\n\r\n\r\na\r\n\r\nInteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"], ["updated_at", "2017-06-10 18:05:30.828815"], ["id", 6]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 44ms (ActiveRecord: 22.7ms)
+
+
+Started GET "/posts/6" for 10.0.2.2 at 2017-06-10 18:05:30 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (6.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 6]]
+  [1m[36mComment Load (3.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (3.9ms)
+  Rendered posts/show.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 504ms (Views: 486.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/6/edit" for 10.0.2.2 at 2017-06-10 18:05:49 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/edit.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 492ms (Views: 481.3ms | ActiveRecord: 4.7ms)
+
+
+Started PATCH "/posts/6" for 10.0.2.2 at 2017-06-10 18:05:59 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aVBxJNugAPOsn05eXGO7CeQiy7jUl/iX2/PEQSKVowbtog2YMPxfm9kdkPL/RIUZeInoXeNRKyBy90aoW5OtLQ==", "post"=>{"title"=>"New Post Blog Test", "body"=>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.\r\n\r\n<>\r\n\r\nInteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"}, "commit"=>"Update Post", "id"=>"6"}
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (2.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mUPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["body", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.\r\n\r\n<>\r\n\r\nInteger tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"], ["updated_at", "2017-06-10 18:06:00.033325"], ["id", 6]]
+  [1m[35m (10.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 43ms (ActiveRecord: 22.6ms)
+
+
+Started GET "/posts/6" for 10.0.2.2 at 2017-06-10 18:06:00 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (8.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[35mComment Load (2.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 6]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (3.3ms)
+  Rendered posts/show.html.erb within layouts/application (109.3ms)
+Completed 200 OK in 521ms (Views: 503.3ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/posts/6" for 10.0.2.2 at 2017-06-10 18:10:55 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[35mComment Load (2.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 6]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.6ms)
+  Rendered posts/show.html.erb within layouts/application (102.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /vagrant/blog/app/assets/stylesheets/_normalize.css.scss to /vagrant/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___962374192__635717098 at /vagrant/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 1087ms (Views: 1074.1ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/application.self-d5cba5054625d70fb794ec3477fbbb956b52e51b8a959e38b02c1ec6c764f34a.css?body=1" for 10.0.2.2 at 2017-06-10 18:10:56 +0000
+
+
+Started GET "/posts/6" for 10.0.2.2 at 2017-06-10 18:11:08 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (2.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (3.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[35mComment Load (2.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 6]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (3.6ms)
+  Rendered posts/show.html.erb within layouts/application (73.1ms)
+Completed 200 OK in 608ms (Views: 593.9ms | ActiveRecord: 10.2ms)
